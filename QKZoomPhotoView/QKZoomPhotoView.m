@@ -176,6 +176,8 @@
     
     _imageView.frame = CGRectMake(xPoint, yPoint, CGRectGetWidth(_imageView.frame), CGRectGetHeight(_imageView.frame));
     
+    //Make sure the contentInset is zeroed under navigation bars.
+    self.contentInset = UIEdgeInsetsMake(0.0, 0.0, 0.0, 0.0);
 }
 
 #pragma mark - UIScrollViewDelegate
